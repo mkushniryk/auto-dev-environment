@@ -1,0 +1,18 @@
+{
+    "root": "C:\\Development",
+    "workspaces": [
+        {
+            "workspace": "Personal",
+            "repositories": [
+                {
+                    "name": "auto-dev-environment",
+                    "branches": {
+                        "default": "main",
+                        "sync": [ "main" ]
+                    },
+                    "origin": "https://github.com/dotmen/auto-dev-environment.git"
+                }
+            ]
+        }
+    ]
+}
