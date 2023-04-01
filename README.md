@@ -15,7 +15,7 @@ GitRepoSync is a PowerShell script that automates the process of syncing local G
 2. Run the script using the following command:
 
 ```powershell
-    powershell.exe -ExecutionPolicy Bypass -File "GitRepoSync.ps1" -configFilePath "code-environment.project.json"
+    powershell.exe -ExecutionPolicy Bypass -File "GitRepoSync.ps1" --c "code-environment.project.json"
 ```
 
 ## Sync Behavior
