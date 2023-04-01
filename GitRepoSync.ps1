@@ -114,7 +114,8 @@ function Invoke-SyncRepository {
     if (!(Test-Path -Path $repositoryDirectoryPath)) {
         Write-Host "Cloning repository: ${repository.origin}"
         Invoke-Git { git clone $repository.origin $repositoryDirectoryPath }
-        Sync-Branches -sync $repository.branches.sync --d $repository.branches.default
+        Sync-Branches -sync $repository.branches.sync
+        Invoke-Git { git checkout $repository.branches.default }
     } else {
         Push-Location $repositoryDirectoryPath
 
